@@ -1,0 +1,33 @@
+.header {
+    position: relative;
+    height: 65vh;
+    background-image: url(../../img/header.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+    .header-box {
+        @include box(100%);
+        
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        
+        .motto {
+            display: block;
+            color: $color-black;
+            
+            transition: color, 0.1s;
+        }
+    }
+    
+    transition: opacity, 0.75s;
+    
+    &:hover {
+        opacity: 0.98;
+        
+        .motto {
+            color: darken($color-black, 100);
+        }
+    }
+}

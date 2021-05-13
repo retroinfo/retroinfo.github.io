@@ -1,0 +1,16 @@
+/* ABOUT */
+
+#about {
+    background-color: $color-lightgrey;
+    
+    .about-head {
+        @include section-head($color-black);
+    }
+    
+    .about-box {
+        @include box(85%);
+        
+        text-indent: 0.5rem;
+        line-height: 1.75rem;
+    }
+}

@@ -1,0 +1,13 @@
+@mixin box($width) {
+    width: $width;
+    margin: auto;
+    padding: 2rem;
+}
+
+@mixin section-head($color) {
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+}
