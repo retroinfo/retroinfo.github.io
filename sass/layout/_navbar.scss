@@ -1,0 +1,29 @@
+/* NAVBAR */
+
+.navbar {    
+    background-color: $color-blue;
+    text-transform: capitalize;
+    
+    .navbar-brand {
+        color: $color-white;
+        transition: scale, 0.5s;
+        
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+    
+        
+    .nav-item {
+        margin: 0 1rem;
+            
+        .nav-link {  
+            color: $color-white;
+            transition: color, 0.25s;
+                
+            &:hover {
+                color: darken($color-white, 15);
+            }
+        }
+    }
+}

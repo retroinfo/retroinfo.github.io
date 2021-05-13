@@ -1,0 +1,71 @@
+/* DEFAULT COLORS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth; }
+
+section {
+  padding: 3rem; }
+
+/* NAVBAR */
+.navbar {
+  background-color: #3563b2;
+  text-transform: capitalize; }
+  .navbar .navbar-brand {
+    color: #fcfcfc;
+    transition: scale, 0.5s; }
+    .navbar .navbar-brand:hover {
+      transform: scale(1.25); }
+  .navbar .nav-item {
+    margin: 0 1rem; }
+    .navbar .nav-item .nav-link {
+      color: #fcfcfc;
+      transition: color, 0.25s; }
+      .navbar .nav-item .nav-link:hover {
+        color: #d6d6d6; }
+
+.header {
+  position: relative;
+  height: 65vh;
+  background-image: url(../../img/header.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  transition: opacity, 0.75s; }
+  .header .header-box {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem; }
+    .header .header-box .motto {
+      display: block;
+      color: #232323;
+      transition: color, 0.1s; }
+  .header:hover {
+    opacity: 0.98; }
+    .header:hover .motto {
+      color: black; }
+
+/* ABOUT */
+#about {
+  background-color: #d8d8d8; }
+  #about .about-head {
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+    color: #232323;
+    text-align: center;
+    text-transform: uppercase; }
+  #about .about-box {
+    width: 85%;
+    margin: auto;
+    padding: 2rem;
+    text-indent: 0.5rem;
+    line-height: 1.75rem; }
+
+/*# sourceMappingURL=style.css.map */
