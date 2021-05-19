@@ -1,16 +1,99 @@
 /* ABOUT */
-
 #about {
-    background-color: $color-lightgrey;
+    background-color: $color-white;
     
     .about-head {
-        @include section-head($color-black);
+        @include section-head($color-darkblue);
     }
     
     .about-box {
         @include box(85%);
         
         text-indent: 0.5rem;
-        line-height: 1.75rem;
+        line-height: 1.5rem;
+        
+        font-weight: 300;
+        color: $color-black;
+    }
+    
+    .funding-subhead {
+        @include section-head($color-darkblue);
+        margin-bottom: 0;
+    }
+    
+    .funding-box {
+        @include box(90%);
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .funding-item {
+            width: 10%;
+            margin: 0 2rem;
+            
+            transition: scale, 0.5s;
+            
+            .funding-link img {
+                width: 100%;
+            }
+            
+            &:hover {
+                transform: scale(1.10);
+            }
+        }
+    }
+}
+
+/* NEWS */
+#news{
+    background-color: $color-lightgrey;
+    
+    .news-head {
+        @include section-head($color-black);
+    }
+}
+
+/* RESEARCH */
+#research {
+    background-color: $color-lightblue;
+    
+    .research-head {
+        @include section-head($color-darkgrey);
+    }
+    
+    .research-box {
+        @include box(60%);
+        
+        border-bottom: 0.1rem solid $color-black;
+        
+        .research-subhead {
+            @include section-head($color-darkgrey);
+            
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        
+        .research-blog {
+            display: flex;
+            
+            text-indent: 0.5rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            color: $color-black;
+        }
+        
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
+
+/* TEAM */
+#team {
+    background-color: $color-lightyellow;
+    
+    .team-head {
+        @include section-head($color-black);
     }
 }
