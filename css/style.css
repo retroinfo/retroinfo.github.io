@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   scroll-behavior: smooth; }
 
 body {
@@ -16,11 +16,16 @@ section {
 
 /* NAVBAR */
 .navbar {
-  background-color: #3563b2;
-  text-transform: capitalize; }
+  background-color: #154482;
+  padding: 0 10rem;
+  text-transform: uppercase; }
   .navbar .navbar-brand {
+    display: inline-block;
+    width: 4rem;
     color: #fcfcfc;
     transition: scale, 0.5s; }
+    .navbar .navbar-brand img {
+      width: 100%; }
     .navbar .navbar-brand:hover {
       transform: scale(1.25); }
   .navbar .nav-item {
@@ -57,11 +62,11 @@ section {
 
 /* ABOUT */
 #about {
-  background-color: #d8d8d8; }
+  background-color: #fcfcfc; }
   #about .about-head {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.2rem;
-    color: #232323;
+    color: #154482;
     text-align: center;
     text-transform: uppercase; }
   #about .about-box {
@@ -69,6 +74,81 @@ section {
     margin: auto;
     padding: 2rem;
     text-indent: 0.5rem;
-    line-height: 1.75rem; }
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #232323; }
+  #about .funding-subhead {
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+    color: #154482;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  #about .funding-box {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #about .funding-box .funding-item {
+      width: 10%;
+      margin: 0 2rem;
+      transition: scale, 0.5s; }
+      #about .funding-box .funding-item .funding-link img {
+        width: 100%; }
+      #about .funding-box .funding-item:hover {
+        transform: scale(1.1); }
+
+/* NEWS */
+#news {
+  background-color: #d8d8d8; }
+  #news .news-head {
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+    color: #232323;
+    text-align: center;
+    text-transform: uppercase; }
+
+/* RESEARCH */
+#research {
+  background-color: #95c6f2; }
+  #research .research-head {
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+    color: #464646;
+    text-align: center;
+    text-transform: uppercase; }
+  #research .research-box {
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    border-bottom: 0.1rem solid #232323; }
+    #research .research-box .research-subhead {
+      margin-bottom: 1rem;
+      letter-spacing: 0.2rem;
+      color: #464646;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      text-align: left; }
+    #research .research-box .research-blog {
+      display: flex;
+      text-indent: 0.5rem;
+      line-height: 1.5rem;
+      font-weight: 300;
+      color: #232323; }
+    #research .research-box:last-of-type {
+      border-bottom: none; }
+
+/* TEAM */
+#team {
+  background-color: #f2df97; }
+  #team .team-head {
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+    color: #232323;
+    text-align: center;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
